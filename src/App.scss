@@ -1,0 +1,44 @@
+$dark: #333456;
+$dark-soft: #72738E;
+$light: #E6E8EA;
+*{
+  box-sizing: content-box;
+}
+
+body {
+  color: $dark;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  color: $dark;
+  text-decoration: none;
+}
+
+.z-navbar {
+  padding-top: 40px;
+  .navbar-list {
+    list-style: none;
+
+    & li {
+      display: inline-block;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .navbar-tab {
+      padding: 0 10px 0 10px;
+    }
+
+    .navbar-btn {
+      background-color: $dark-soft;
+      border-radius: 10px;
+      padding: 7px;
+      a {
+        color: $light;
+      }
+    }
+  }
+}
