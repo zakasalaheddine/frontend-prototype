@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 $dark: #333456;
 $dark-soft: #72738E;
 $light: #E6E8EA;
-*{
+
+* {
   box-sizing: content-box;
 }
 
 body {
   color: $dark;
+  font-family: 'Roboto', sans-serif;
 }
 
 a,
@@ -19,26 +22,67 @@ a:active {
 
 .z-navbar {
   padding-top: 40px;
-  .navbar-list {
-    list-style: none;
+  position: relative;
+  padding: 15px 0;
 
-    & li {
-      display: inline-block;
-      padding-left: 10px;
-      padding-right: 10px;
+  .navbar-list {
+    svg {
+      color: $light;
     }
 
-    .navbar-tab {
-      padding: 0 10px 0 10px;
+    list-style: none;
+
+    a {
+      display: block;
+    }
+
+    li {
+      display: inline-block;
+      padding: 10px;
     }
 
     .navbar-btn {
-      background-color: $dark-soft;
-      border-radius: 10px;
-      padding: 7px;
+      background-color: $light;
+      border-radius: 25px;
+      padding: 10px 20px;
+
       a {
-        color: $light;
+        display: block;
       }
     }
+  }
+}
+
+.phone-form {
+  input[type="text"] {
+    border: 0;
+    border-radius: 0;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid $dark;
+    padding-right: 5px;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .button{
+    background-color: $dark;
+    margin: 0 5px;
+    color: $light;
+    padding: 8px 30px;
+    border-radius: 30px;
+  }
+}
+
+.header{
+  padding-top: 50px;
+  .lead{
+    font-size: 4.8em;
+  }
+  .accent{
+    font-size: .9em;
+    font-weight: 600;
+    color: #7f8c8d;
   }
 }
