@@ -1,5 +1,6 @@
 import React from "react";
 import ReviewCard from "./ReviewCard.component";
+import InfoAbout from "./InfoAbout.component";
 
 const About = () => {
   const review = {
@@ -16,7 +17,9 @@ const About = () => {
         <div className="column">
           <ReviewCard review={review} />
         </div>
-        <div className="column"></div>
+        <div className="column">
+          <InfoAbout />
+        </div>
       </div>
     </div>
   );

@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
 $dark: #333456;
-$dark-soft: #72738E;
-$light: #E6E8EA;
+$dark-soft: #72738e;
+$light: #e6e8ea;
 
 * {
   box-sizing: content-box;
@@ -9,7 +10,7 @@ $light: #E6E8EA;
 
 body {
   color: $dark;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 a,
@@ -66,7 +67,7 @@ a:active {
     }
   }
 
-  .button{
+  .button {
     background-color: $dark;
     margin: 0 5px;
     color: $light;
@@ -75,23 +76,43 @@ a:active {
   }
 }
 
-.header{
+.header {
   padding-top: 50px;
-  .lead{
+  .lead {
     font-size: 4.8em;
   }
-  .accent{
-    font-size: .9em;
+  .accent {
+    font-size: 0.9em;
     font-weight: 600;
     color: #7f8c8d;
   }
 }
 
-.about{
-  .card{
-    .card-content{
+.about {
+  .card {
+    .card-content {
       background-color: $dark;
       color: $light;
+
+      blockquote {
+        font-style: italic;
+        border-left: 3px solid $dark-soft;
+        padding: 10px;
+      }
+
+      .media-content {
+        p {
+          color: $light;
+
+        }
+      }
     }
+  }
+}
+
+.section-title{
+  span{
+    width: 50px;
+    border-top: 2px solid $dark-soft;
   }
 }
