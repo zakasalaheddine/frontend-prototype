@@ -2,6 +2,7 @@
 
 $dark: #333456;
 $dark-soft: #72738e;
+$light-text: #7f8c8d;
 $light: #e6e8ea;
 
 * {
@@ -62,6 +63,7 @@ a:active {
     background: transparent;
     border-bottom: 2px solid $dark;
     padding-right: 5px;
+
     &:focus {
       outline: none;
     }
@@ -78,13 +80,15 @@ a:active {
 
 .header {
   padding-top: 50px;
+
   .lead {
     font-size: 4.8em;
   }
+
   .accent {
     font-size: 0.9em;
     font-weight: 600;
-    color: #7f8c8d;
+    color: $light-text;
   }
 }
 
@@ -110,9 +114,49 @@ a:active {
   }
 }
 
-.section-title{
-  span{
+.section-title {
+  span {
     width: 50px;
     border-top: 2px solid $dark-soft;
+  }
+}
+
+.z-title {
+  font-size: 2.5em;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.how-it-work {
+  .image {
+    margin: 0 auto;
+  }
+}
+
+.widget {
+  .widget-header {
+    font-size: 2.5em;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  hr {
+    background-color: $dark-soft;
+  }
+
+  .widget-paragraph {
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+    color: $light-text;
+  }
+
+  .widget-title {
+    font-size: 1.2em;
+    font-weight: bold;
+
+    svg {
+      padding-left: 20px;
+    }
   }
 }

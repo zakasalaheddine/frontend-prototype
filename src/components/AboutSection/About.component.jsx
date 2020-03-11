@@ -1,6 +1,7 @@
 import React from "react";
 import ReviewCard from "./ReviewCard.component";
-import InfoAbout from "./InfoAbout.component";
+import SectionTitle from "../layout/SectionTitle.component";
+import Widget from "../layout/Widget";
 
 const About = () => {
   const review = {
@@ -17,8 +18,19 @@ const About = () => {
         <div className="column">
           <ReviewCard review={review} />
         </div>
+        <div className="column is-1"></div>
         <div className="column">
-          <InfoAbout />
+          <div className="info-about">
+            <SectionTitle sectionNumber="1" title="About us" />
+            <Widget
+              header="Let's make cities better"
+              p1="Upshift is like having your own car at your doorstep, but only the days you want it. Monthly plans based on how much you drive that include parking, insurance, maintenance and more."
+              p2="We belive in using business to drive positive change in the world and never settling for what worked in the past."
+              image="/images/user2.png"
+              title="Learn more about the company"
+              caption="Interested in our values ?"
+            />
+          </div>
         </div>
       </div>
     </div>

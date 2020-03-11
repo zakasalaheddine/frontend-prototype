@@ -3,9 +3,9 @@ import React from 'react'
 const Widget = ({ header, p1, p2, image, caption, title }) => {
     return (
         <div className="widget">
-            {header && (<h3>{header}</h3>)}
-            {p1 && (<p>{p1}</p>)}
-            {p2 && (<p>{p2}</p>)}
+            {header && (<h3 className="widget-header">{header}</h3>)}
+            {p1 && (<p className="widget-paragraph">{p1}</p>)}
+            {p2 && (<p className="widget-paragraph">{p2}</p>)}
             <hr />
             {
                 image && (
