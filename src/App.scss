@@ -115,9 +115,14 @@ a:active {
 }
 
 .section-title {
+  font-weight: bold;
   span {
     width: 50px;
-    border-top: 2px solid $dark-soft;
+    display: inline-block;
+    border-top: 2px solid #72738e;
+    margin-bottom: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
   }
 }
 
@@ -193,16 +198,67 @@ a:active {
       padding-top: 40px;
     }
 
-    .caption, p {
+    .caption,
+    p {
       font-size: 1em;
       color: $light-text;
     }
 
     .media-title {
       color: #FFFFFF;
-      svg{
+
+      svg {
         padding-left: 20px;
       }
     }
+  }
+}
+
+.pricing {
+  text-align: center;
+
+}
+
+.package {
+
+  text-align: center;
+
+  .package-title {
+    font-size: 2.5em;
+    padding: 20px 0;
+  }
+
+  .package-subtitle {
+    font-size: 1.1em;
+  }
+
+  .price {
+    font-size: 2em;
+    padding: 20px 0;
+  }
+
+  hr {
+    background-color: $dark-soft;
+  }
+
+  .description {
+    padding: 20px 55px;
+  }
+
+  .button {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: $dark;
+    color: $light;
+  }
+
+  .recommanded{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .8em;
+  }
+  .is-recommanded{
+    border-top: 4px solid $dark;
+    box-shadow: -1px 0px 58px -5px rgba(0,0,0,0.63);
   }
 }
