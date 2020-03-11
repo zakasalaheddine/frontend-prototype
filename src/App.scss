@@ -160,3 +160,49 @@ a:active {
     }
   }
 }
+
+.service {
+  position: relative;
+
+  .section-image {
+    position: absolute;
+
+    img {
+      width: 450px;
+    }
+  }
+
+  .service-infos {
+    margin-top: 50px;
+    margin-left: 400px;
+    width: 50%;
+    background-color: $dark;
+    color: #FFFFFF;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+
+    .title {
+      padding-top: 20px;
+      color: #FFFFFF;
+      text-align: center;
+    }
+
+    .columns {
+      padding-top: 40px;
+    }
+
+    .caption, p {
+      font-size: 1em;
+      color: $light-text;
+    }
+
+    .media-title {
+      color: #FFFFFF;
+      svg{
+        padding-left: 20px;
+      }
+    }
+  }
+}
