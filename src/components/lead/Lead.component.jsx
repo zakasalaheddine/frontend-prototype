@@ -15,7 +15,7 @@ const Lead = () => {
         </div>
         <div className="column">
           <figure className="image">
-            <img src="/images/19280.jpg" alt="LeadImage" />
+            <img src="/images/19280.png" alt="LeadImage" />
           </figure>
         </div>
       </div>

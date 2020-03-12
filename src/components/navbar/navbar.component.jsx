@@ -4,8 +4,12 @@ const Navbar = () => {
   return (
     <div className="z-navbar">
       <div className="container">
-        <div class="columns">
-          <div class="column is-2">upshift</div>
+        <div class="columns is-vcentered">
+          <div class="column is-2">
+            <figure className="image">
+              <img src="/images/logo.png" alt="Placeholderimage" className="is-rounded" />
+            </figure>
+            </div>
           <div class="column">
             <ul className="navbar-list">
               <li className="navbar-tab">

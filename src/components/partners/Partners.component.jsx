@@ -10,7 +10,7 @@ const Partners = () => {
     "/images/50-502860_curbed-logo-california-curbed-logo-black.png",
   ];
   return (
-    <div className="container">
+    <div className="container section">
       <div className="columns is-vcentered">
         {partners.map(partner => (
           <PartnerLogo image={partner} />
