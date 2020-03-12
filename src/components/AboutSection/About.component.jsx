@@ -14,7 +14,7 @@ const About = () => {
   };
   return (
     <div className="container about">
-      <div className="columns">
+      <div className="columns is-vcentered">
         <div className="column">
           <ReviewCard review={review} />
         </div>

@@ -4,7 +4,7 @@ import SectionTitle from "../layout/SectionTitle.component";
 const Service = () => {
   return (
     <div className="container section">
-      <div className="columns">
+      <div className="columns is-vcentered">
         <div className="column is-four-fifths is-offset-1 service">
           <div className="section-image">
             <figure className="image">
@@ -18,7 +18,7 @@ const Service = () => {
             <SectionTitle sectionNumber="3" title="Service zone" />
             <h2 className="title">We've got SF covered</h2>
             <p>We provide two delivery options for any trips :</p>
-            <div className="columns">
+            <div className="columns is-vcentered">
               <div className="column is-1">
                 <i class="fas fa-check"></i>
               </div>

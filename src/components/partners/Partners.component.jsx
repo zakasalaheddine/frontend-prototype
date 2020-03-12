@@ -11,7 +11,7 @@ const Partners = () => {
   ];
   return (
     <div className="container">
-      <div className="columns">
+      <div className="columns is-vcentered">
         {partners.map(partner => (
           <PartnerLogo image={partner} />
         ))}

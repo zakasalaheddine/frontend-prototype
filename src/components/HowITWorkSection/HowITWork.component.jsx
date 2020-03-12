@@ -30,7 +30,7 @@ const HowITWork = () => {
   ];
   return (
     <div className="how-it-work container ">
-      <div className="columns section">
+      <div className="columns section is-vcentered">
         <div className="column">
           <SectionTitle title="HOW IT WORK" sectionNumber="2" />
           <h2 className="z-title">Simple and handy rental process</h2>
@@ -51,7 +51,7 @@ const HowITWork = () => {
           />
         </div>
       </div>
-      <div className="columns section">
+      <div className="columns section is-vcentered">
         {steps.map((step, idx) => (
           <div className="column" key={idx}>
             <figure className="image is-128x128 ">

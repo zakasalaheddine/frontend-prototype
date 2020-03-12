@@ -107,7 +107,6 @@ a:active {
       .media-content {
         p {
           color: $light;
-
         }
       }
     }
@@ -115,7 +114,10 @@ a:active {
 }
 
 .section-title {
+  text-transform: uppercase;
   font-weight: bold;
+  font-size: 0.8em;
+  padding: 20px 0;
   span {
     width: 50px;
     display: inline-block;
@@ -182,7 +184,7 @@ a:active {
     margin-left: 400px;
     width: 50%;
     background-color: $dark;
-    color: #FFFFFF;
+    color: #ffffff;
     padding-left: 100px;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -190,7 +192,7 @@ a:active {
 
     .title {
       padding-top: 20px;
-      color: #FFFFFF;
+      color: #ffffff;
       text-align: center;
     }
 
@@ -205,7 +207,7 @@ a:active {
     }
 
     .media-title {
-      color: #FFFFFF;
+      color: #ffffff;
 
       svg {
         padding-left: 20px;
@@ -216,11 +218,9 @@ a:active {
 
 .pricing {
   text-align: center;
-
 }
 
 .package {
-
   text-align: center;
 
   .package-title {
@@ -252,13 +252,35 @@ a:active {
     color: $light;
   }
 
-  .recommanded{
+  .recommanded {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: .8em;
+    font-size: 0.8em;
   }
-  .is-recommanded{
+  .is-recommanded {
     border-top: 4px solid $dark;
-    box-shadow: -1px 0px 58px -5px rgba(0,0,0,0.63);
+    box-shadow: -1px 0px 58px -5px rgba(0, 0, 0, 0.63);
+  }
+}
+
+.car-section {
+  position: relative;
+  padding-top: 50px;
+  .z-title {
+    text-align: start;
+  }
+  .description {
+    padding-top: 20px;
+  }
+  .images {
+    .image {
+      padding-bottom: 20px;
+    }
+    .lead-image{
+      width: 400px;
+    }
+    .second-image {
+      width: 200px;
+    }
   }
 }

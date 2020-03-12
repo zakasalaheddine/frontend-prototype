@@ -31,7 +31,7 @@ const Pricing = () => {
             <SectionTitle sectionNumber="04" title="Pricing" />
             <h2 className="title">Monthly plans for less than a parking space.</h2>
             <p className="caption">Plans include concierge delivery and pickup, cleaning and refueling service, full coverage insurance and maintenance-everything but gas and tolls. Join instantly with $0 down and get your car right now.</p>
-            <div className="columns section">
+            <div className="columns is-vcentered section">
                 {
                     pricings.map((plan, idx) => (<PricingElement element={plan} key={idx} />))
                 }
